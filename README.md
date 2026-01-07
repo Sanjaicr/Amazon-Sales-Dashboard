@@ -1,148 +1,129 @@
-# 📊 Power BI Sales Dashboard with Row-Level Security (RLS)
+# 📊 Power BI Amazon Sales Dashboard (Enterprise BI Project)
 
-## 📌 Project Overview
-This project is a fully optimized and interactive **Power BI Sales Dashboard** designed to analyze sales performance across **regions, products, time periods, and sales representatives**.  
-The dashboard follows **Power BI best practices** with a strong focus on **performance, usability, security, and business relevance**.
+## Overview
+This project is an **enterprise-level Power BI Sales Dashboard** built to analyze sales performance across **regions, products, time periods, and sales representatives**.  
+It focuses on **clean design, strong interactivity, performance optimization, and secure data access**, closely reflecting real-world BI reporting standards.
 
-The project also implements **Row-Level Security (RLS)** and **Drill Through functionality**, making it suitable for **real-world enterprise reporting and detailed analysis**.
-
----
-
-## 🎯 Project Objectives
-- Provide a centralized view of overall sales performance
-- Enable detailed **region-wise and product-wise analysis**
-- Allow users to apply filters using a clean **popup filter panel**
-- Enable **deep-dive analysis** using Drill Through
-- Secure sensitive business data using **Row-Level Security (RLS)**
-- Build a scalable and performance-optimized dashboard
+The dashboard uses **Snowflake as the data source** and incorporates multiple **advanced Power BI features** commonly used in professional environments.
 
 ---
 
-## 🚀 Key Features
+## Objectives
+- Analyze overall and region-wise sales performance
+- Enable interactive, drillable insights for business users
+- Ensure secure, role-based data access
+- Build a scalable and production-ready Power BI report
+- Demonstrate end-to-end BI development skills
 
-### 🔹 Interactive Filter Popup
-- Custom popup filter panel built using **Bookmarks & Buttons**
-- Filters include:
-  - Date Range
-  - Month
-  - Quarter
-  - Region
+---
+
+## Key Features
+
+### 🔹 Snowflake Data Integration
+- Data imported directly from **Snowflake**
+- Cloud-based and scalable data source
+- Optimized data model for reporting performance
+
+### 🔹 Interactive Filter Popup (Bookmarks)
+- Custom popup filter panel using **Bookmarks & Buttons**
+- Filters for Date, Month, Quarter, and Region
 - Filters remain applied even after closing the popup
-- Clean UI without permanent slicers on the report canvas
+- Clean dashboard layout without permanent slicers
 
----
-
-### 🔹 Region-Wise Analysis Pages
-- Dedicated pages for:
-  - North Region
-  - South Region
-  - East Region
-  - West Region
+### 🔹 Region-Wise Dashboards
+- Separate pages for **North, South, East, and West**
 - Implemented using **Page-Level Filters**
-- Enables focused analysis for regional managers
-
----
-
-### 🔹 Synced Filters Across Pages
-- Slicers are synchronized across all relevant pages
-- Filter selections automatically reflect throughout the report
-- Ensures consistent insights across dashboards
-
----
+- Allows focused analysis for regional stakeholders
 
 ### 🔹 Drill Through Analysis
-- Implemented **Drill Through pages** for detailed analysis
-- Users can right-click on a data point to:
-  - Drill from summary view → detailed view
-- Enables deeper insights into:
-  - Product-level performance
-  - Sales representative performance
-  - Transaction-level details
-- Enhances analytical depth without overcrowding main dashboards
-
----
+- Drill Through pages for detailed analysis
+- Right-click navigation from summary to detailed views
+- Supports deeper insights into products, sales reps, and regions
 
 ### 🔹 Row-Level Security (RLS)
-- Implemented **Dynamic Row-Level Security**
-- Users can view only their assigned region’s data
-- Enhances data privacy and enterprise readiness
+- Dynamic **Row-Level Security** implemented
+- Users can view only data relevant to their assigned region
 - Suitable for deployment in **Power BI Service**
 
----
+### 🔹 Page Navigation
+- Custom navigation buttons for smooth user flow
+- Easy movement between global, regional, and drill-through pages
 
-### 🔹 Navigation & Performance Optimization
-- Page navigation buttons for smooth user experience
-- Grouped visuals for better layout control
-- Optimized measures and visuals for improved performance
+### 🔹 Conditional Formatting
+- Conditional formatting applied to KPIs and tables
+- Highlights performance trends, highs, and lows
+- Improves readability and decision-making
 
----
-
-## 📈 Key KPIs Included
-- Total Sales Amount
-- Total Selling Price
-- Total Quantity Sold
-- Average Sales
-- Number of Records
+### 🔹 Dynamic URL
+- Dynamic URL implementation for external navigation
+- Enables context-based linking to detailed reports or systems
 
 ---
 
-## 🛠 Tools & Technologies Used
-- Power BI Desktop
-- DAX (Measures & Calculations)
-- Row-Level Security (RLS)
-- Drill Through
-- Power BI Bookmarks
-- Sync Slicers
-- Page & Visual-Level Filters
-- Data Modeling & Optimization
+## Key KPIs
+- Total Sales Amount  
+- Total Selling Price  
+- Total Quantity Sold  
+- Average Sales  
+- Number of Transactions  
 
 ---
 
-## 📂 Dataset Overview
-The dataset contains transactional sales data with the following fields:
-- Product ID & Product Category
+## Tools & Technologies
+- Power BI Desktop  
+- Snowflake  
+- DAX  
+- Row-Level Security (RLS)  
+- Drill Through  
+- Bookmarks & Page Navigation  
+- Conditional Formatting  
+- Dynamic URL  
+- Data Modeling & Performance Optimization  
+
+---
+
+## Dataset
+Transactional sales data including:
+- Product & Category
 - Region
-- Sales Amount & Selling Price
-- Quantity Sold
-- Discount
+- Sales Amount and Price
+- Quantity and Discount
 - Sales Representative
 - Date (Year, Quarter, Month, Day)
 
-*(Dataset is embedded within the `.pbix` file.)*
+*(Data is sourced from Snowflake and modeled within the `.pbix` file.)*
 
 ---
 
-## 📄 Report Pages
-- Main Dashboard – Global sales overview
-- Region Dashboards – North, South, East, West
-- Drill Through Pages – Detailed product & sales analysis
-- Product & Sales Representative Analysis
+## Report Pages
+- Global Sales Dashboard  
+- Regional Dashboards (North, South, East, West)  
+- Drill Through Detail Pages  
 
 ---
 
-## 🧠 Skills Demonstrated
-- Business intelligence & data analysis
-- Power BI dashboard design & storytelling
-- Advanced filtering using bookmarks
-- Drill Through implementation
-- Secure reporting using Row-Level Security
-- Performance optimization techniques
+## Skills Demonstrated
+- End-to-end BI development
+- Cloud data integration (Snowflake → Power BI)
+- Advanced Power BI interactivity
+- Secure reporting using RLS
+- Dashboard design and storytelling
+- Performance optimization
 
 ---
 
-## ▶️ How to Use
-1. Download the `.pbix` file
-2. Open it using **Power BI Desktop**
-3. Use the filter popup to apply filters
-4. Right-click on visuals to use **Drill Through**
-5. Navigate between pages for detailed insights
-6. (Optional) Test RLS roles in **Model View**
+## How to Use
+1. Download the `.pbix` file  
+2. Open in **Power BI Desktop**  
+3. Use popup filters and navigation buttons  
+4. Right-click visuals to use **Drill Through**  
+5. (Optional) Test RLS roles in **Model View**
 
 ---
 
-## 👤 Author
+## Author
 **Sanjai CR**  
 MBA – Business Data Analytics  
 Aspiring Data Analyst / Power BI Developer
---
-*This project is created for learning, portfolio, and enterprise-ready BI demonstration purposes.*
+
+*This project is built for portfolio, learning, and enterprise BI demonstration purposes.*
